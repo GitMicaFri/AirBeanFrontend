@@ -1,0 +1,39 @@
+
+.orderHistoryPageContainer {
+    background-color: white;
+    background-image: url("../../assets/ProfilepageBackground.PNG");
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.personContainer {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 55px;
+}
+
+.profilePicture {
+    height: 80px;
+    margin-bottom: 20px;
+}
+
+.orderHistoryContainer {
+    margin-top: 60px;
+    display: grid;
+    grid-template-areas:
+    "orderhistory-h2 ."
+    "ordernumber-h4 date"
+    "ordersum-p sumPerDate"
+    "totalSpent-h4 totalSum" ;
+    margin-left: 40px;
+}
+
+.name-h2, .email-p, .orderHistory-h2, .orderNumber-h4, .date, .orderSum-p, .sumPerDate, .totalSpent-h4, .totalSum {
+    color: white;
+}
+
+
