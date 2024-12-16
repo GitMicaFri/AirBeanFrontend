@@ -1,0 +1,13 @@
+.landingPageContainer {
+  width: 100vw; /* Gör den responsiv */
+  height: 100vh; /* Gör den responsiv */
+  background-color: #f5f5f5; /* Lägg till en bakgrundsfärg för att se container */
+  display: flex; /* Använd flexbox för centrerad layout */
+  justify-content: center;
+  align-items: center;
+}
+
+.landingImage {
+  max-width: 100%; /* Gör bilden responsiv */
+  height: auto;
+}
