@@ -12,17 +12,17 @@ Du ska bygga en webbapp där du kan beställa kaffe och få den levererad via dr
 
 Figmaskiss: https://www.figma.com/file/UeUGVefSdgio0sRxPFccJI/AirBean-v.1.0?node-id=0%3A1
 
-(APIDOCS: https://airbean-api-xjlcn.ondigitalocean.app/api/docs/ (FUNGERAR INTE))
-(API: https://airbean-api-xjlcn.ondigitalocean.app/ (FUNGERAR INTE))
+ORIGINALLÄNK, FUNGERAR INTE: APIDOCS: https://airbean-api-xjlcn.ondigitalocean.app/api/docs/
+ORIGINALLÄNK, FUNGERAR INTE: API: https://airbean-api-xjlcn.ondigitalocean.app/
 
-API-2: https://airbean-9pcyw.ondigitalocean.app/api/docs/ (KORREKT LÄNK)
+NY KORREKT LÄNK: API-2: https://airbean-9pcyw.ondigitalocean.app/api/docs/
 
 Instruktioner
 Kravspecifikation
 För att få Godkänt ska ni:
 
 Gjort enligt Figma skissen
-Är en single psge application (SPA) med react-router-dom
+Är en single page application (SPA) med react-router-dom
 Använder sig av Zustand som global state
 Gå att lägga till produkter i en varukorg
 I varukorgen ändra antal/ta bort produkter
