@@ -2,8 +2,8 @@
 
 import { useEffect, useState } from "react";
 import useStore from "../../store/store";
-import addIcon from "../../assets/add.svg";
-import "./CoffeeMenu.css";
+import addIcon from "../../assets/add-icon.png";
+import "./coffeeMenu.css";
 
 const Menu = () => {
   const { addToCart } = useStore();
@@ -14,17 +14,18 @@ const Menu = () => {
     const fetchData = async () => {
       try {
         const response = await fetch(
-          "https://airbean-api-xjlcn.ondigitalocean.app/api/beans/"
+          "https://airbean-9pcyw.ondigitalocean.app/api/beans/"
         );
         const data = await response.json();
         //uppdaterar coffee med ny data
+        console.log(data); // Logga för att se vad vi får från API:et
         setCoffee(data);
       } catch (error) {
         console.error("Oops!", error);
       }
     };
     fetchData();
-    // dependency array finns här så attusEffect körs en gång
+    // dependency array finns här så att useEffect körs en gång
   }, []);
 
   return (
