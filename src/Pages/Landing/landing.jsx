@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom'
 
 
 function LandingPage() {
-
+  console.log("Rendering LandingPage component");  // Debug-logg
     return (
        //  showNavIcon={false}>  
                 <div className="landingPageContainer">

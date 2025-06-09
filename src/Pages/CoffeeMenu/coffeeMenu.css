@@ -1,7 +1,7 @@
 @import '../../common/variables.css';
 
 .menuHeader {
-    font-family: var(--pt-font);
+    font-family: PT Serif;
     margin-top: 4rem;
     font-size: 2.6rem;
     margin-bottom: -1.5rem;

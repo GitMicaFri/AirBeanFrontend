@@ -2,7 +2,7 @@ import useStore from "../../store/store";
 import { useNavigate } from "react-router-dom";
 import arrowUp from "../../assets/arrowUp.svg";
 import arrowDown from "../../assets/arrowDown.svg";
-import "./cart.scss";
+import "./cart.css";
 import xIcon from "../../assets/close.svg";
 function Cart() {
   const { cart, increaseQuantity, decreaseQuantity, sendOrder } = useStore();

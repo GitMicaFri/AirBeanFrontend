@@ -1,4 +1,4 @@
-import "./about.scss";
+import "./about.css";
 import ownerImg from "../../assets/ownerImg.jpg";
 import aboutBackground from "../../assets/background.svg";
 import navIcn from "../../assets/navicon.svg";

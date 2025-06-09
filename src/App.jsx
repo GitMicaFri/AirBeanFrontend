@@ -1,5 +1,4 @@
-
-import React from 'react';
+// App.jsx //
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; 
 import LandingPage from './Pages/Landing/landing'
 import AboutPage from './Pages/About/about'
@@ -10,6 +9,7 @@ import ProfilePage from './Pages/Profile/profile'
 import StatusPage from './Pages/Status/status'
 
 function App() {
+  console.log("Rendering App component");  // Debug-logg
   return (
     //<LandingPage />
     <Router>

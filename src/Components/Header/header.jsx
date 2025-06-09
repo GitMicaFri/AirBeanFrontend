@@ -1,7 +1,7 @@
 import navIcon from "../../assets/navicon.svg";
 import { Link } from "react-router-dom";
 import cartIcon from "../../assets/cart.svg";
-import "./header.scss";
+import "./header.css";
 import useStore from "../../store/store";
 
 const Header = () => {
