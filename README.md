@@ -39,7 +39,7 @@ För att få **Godkänt** ska du:
 -   I varukorgen ska användaren kunna ändra antal och ta bort produkter
 -   Kunna skicka sin order och få ett svar med ETA och ordernummer
 
-### För att få **Väl Godkänt** (Valfritt, du kan skippa detta):
+### För att få **Väl Godkänt**:
 
 -   Hämta alla produkter med `fetch`
 -   Integrera API:et med SPA
@@ -47,7 +47,7 @@ För att få **Godkänt** ska du:
 -   Om användaren är inloggad ska ordern kopplas till den inloggade användaren
 -   Skapa en orderhistorik-sida som visar den inloggade användarens ordrar
 
-### För att få **Stilpoäng** (Valfritt):
+### För att få **Stilpoäng**:
 
 -   Gör applikationen säkrare genom att lägga till lösenord för användaren
 -   Authentication ska ske med hjälp av JWT
