@@ -1,0 +1,67 @@
+/* navmenu.css */
+.navMenuContainer {
+    background-color: #333;
+    color: white;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.closeButton {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.closeIcon {
+    width: 42px;
+    height: 42px;
+}
+
+.navMenuTitle {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.navMenuList {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.navMenuList li {
+    margin: 15px 0;
+}
+
+.navMenuList a {
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+    font-family: PT Serif;
+}
+
+.navMenuList a:hover {
+    text-decoration: underline;
+}
+
+.closeButton {
+    margin-top: 30px;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.closeButton a {
+    text-decoration: none;
+    color: white;
+}

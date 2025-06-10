@@ -1,3 +1,4 @@
+/*
 import "./nav.css";
 import closeIcon from "../../assets/close.svg";
 import { Link } from "react-router-dom";
@@ -31,3 +32,4 @@ function Nav() {
 }
 
 export default Nav;
+*/

@@ -1,0 +1,18 @@
+.menuButton {
+    position: absolute;
+    top: 12px;
+    left: 2px;
+    z-index: 10;
+    cursor: pointer;
+    background: transparent; /* Ingen bakgrund, bara ikonen */
+}
+
+.menuIcon {
+    width: 45px; /* Justera storleken på ikonen */
+    height: auto;
+    transition: transform 0.3s ease; /* Lägg till en liten animation */
+}
+
+.menuButton:hover .menuIcon {
+    transform: scale(1.1); /* När man hovrar, gör ikonen lite större */
+}

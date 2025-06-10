@@ -1,5 +1,6 @@
 import "./about.css";
 import aboutImage from"../../assets/about.png"
+import MenuButton from "../../Components/MenuButton/menuButton"
 
 function About() {
   const style = {
@@ -10,10 +11,13 @@ function About() {
 
   return (
     <div className="about" style={style}>
-{/*placera meny-knappen*/}
+<MenuButton />
     </div>
   )
 }
+
+export default About;
+
 /*
 import ownerImg from "../../assets/ownerImg.jpg";
 import aboutBackground from "../../assets/background.svg";
@@ -66,5 +70,3 @@ function About() {
   );
 }
 */
-
-export default About;
