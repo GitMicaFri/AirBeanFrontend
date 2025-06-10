@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import useStore from "../../store/store";
 import addIcon from "../../assets/add-icon.png";
+import headerImage from "../../assets/header.svg"; 
 import "./coffeeMenu.css";
 
 const Menu = () => {
@@ -30,6 +31,9 @@ const Menu = () => {
 
   return (
     <div className="menu">
+       <header className="menuHeader">
+        <img src={headerImage} alt="Header" className="headerImage" />  {/* Header med samma bild */}
+      </header>
       <h2 className="menuHeader">Meny</h2>
       <ul>
         {coffee.menu
@@ -53,6 +57,13 @@ const Menu = () => {
           : //visas medan api hämtas
             "Loading..."}
       </ul>
+       <footer className="menuFooter">
+       <img
+          src={headerImage}
+          alt="Footer"
+          className="footerImage"
+        />
+      </footer>
     </div>
   );
 };

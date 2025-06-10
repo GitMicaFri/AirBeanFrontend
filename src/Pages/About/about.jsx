@@ -1,4 +1,20 @@
 import "./about.css";
+import aboutImage from"../../assets/about.png"
+
+function About() {
+  const style = {
+    backgroundImage: `url(${aboutImage})`,
+    backgroundSize: "cover",
+    height: "100vh",
+  };
+
+  return (
+    <div className="about" style={style}>
+{/*placera meny-knappen*/}
+    </div>
+  )
+}
+/*
 import ownerImg from "../../assets/ownerImg.jpg";
 import aboutBackground from "../../assets/background.svg";
 import navIcn from "../../assets/navicon.svg";
@@ -49,5 +65,6 @@ function About() {
     </div>
   );
 }
+*/
 
 export default About;

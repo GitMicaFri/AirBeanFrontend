@@ -1,16 +1,18 @@
 @import '../../common/variables.css';
 
 .about {
-    width: 375px;
-    height: 1000px;
-    padding: 1.5rem;
-    padding-top: 2rem;
+    position: relative;
+    width: 310px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    text-align: left;
+    height: auto;
+    min-height: 80vh;
+    background-size: contain;
+    background-position: center;
 }
 
+/*
 .navIcn {
     display: flex;
     margin: -6rem 0rem 4rem;
@@ -63,3 +65,4 @@
 footer {
     text-align: center;
 }
+    */
