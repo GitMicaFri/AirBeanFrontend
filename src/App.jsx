@@ -7,6 +7,7 @@ import CoffeeMenuPage from './Pages/CoffeeMenu/coffeeMenu'
 import OrderHistoryPage from './Pages/OrderHistory/history'
 import ProfilePage from './Pages/Profile/profile'
 import StatusPage from './Pages/Status/status'
+import Cart from './Pages/Cart/cart'
 
 function App() {
   console.log("Rendering App component");  // Debug-logg
@@ -20,7 +21,8 @@ function App() {
         <Route path="/coffee-menu" element={<CoffeeMenuPage />} />
         <Route path="/history" element={<OrderHistoryPage />} /> 
         <Route path="/profile" element={<ProfilePage />} /> 
-        <Route path="/status" element={<StatusPage />} />   
+        <Route path="/status" element={<StatusPage />} /> 
+        <Route path="/cart" element={<Cart />}/>  
       </Routes>
     </Router>
   )

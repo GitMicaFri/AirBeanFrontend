@@ -3,10 +3,14 @@
 import { useEffect, useState } from "react";
 import useStore from "../../store/store";
 import addIcon from "../../assets/add-icon.png";
+import CartButton from "../../Components/CartButton/CartButton";
+
 import headerImage from "../../assets/header.svg"; 
 import "./coffeeMenu.css";
 
-const Menu = () => {
+const CoffeeMenuPage = () => {
+  console.log("Store ref i CoffeeMenu:", useStore);
+
   const { addToCart } = useStore();
   //lista med alla kaffe
   const [coffee, setCoffee] = useState([]);
@@ -31,6 +35,7 @@ const Menu = () => {
 
   return (
     <div className="menu">
+      <CartButton />
        <header className="menuHeader">
         <img src={headerImage} alt="Header" className="headerImage" />  {/* Header med samma bild */}
       </header>
@@ -68,4 +73,4 @@ const Menu = () => {
   );
 };
 
-export default Menu;
+export default CoffeeMenuPage;

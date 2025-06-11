@@ -12,7 +12,6 @@ function LandingPage() {
                   <img src={landingImage} alt="Landing Page" className="landingImage"/>
                   <Link to="/navMenu" className="landingLink"> 
                   <span className="hoverText">Klicka här för att läsa mer</span>
-                {/*<button>Gå till Kaffemenyn</button>*/}
             </Link>
             </div> 
     )
