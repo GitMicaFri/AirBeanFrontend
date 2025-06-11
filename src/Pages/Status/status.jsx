@@ -16,15 +16,15 @@ function StatusPage() {
   const navigate = useNavigate();
   const handleButtonClick = () => {
     clearCart(); // Tömmer kundvagnen
-    navigate("/"); // Navigerar användaren hem
+    navigate("/"); // Navigerar användaren till landing
   };
 
   return (
     <div className="order">
-      <h3 className="orderNr">Ordernummer #{orderNr}</h3>
+      <h3 className="orderNr">Ordernummer # 1467988{orderNr}</h3>
       <img src={droneIcon} alt="" />
       <h2 className="orderStatus">Din beställning är på väg!</h2>
-      <p className="timeHolder">{eta} minuter</p>
+      <p className="timeHolder">{eta}7 minuter</p>
       <button className="okBtn" onClick={handleButtonClick}>
         OK, cool!
       </button>

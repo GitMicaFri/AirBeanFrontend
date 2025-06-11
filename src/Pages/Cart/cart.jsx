@@ -1,12 +1,11 @@
-import React from "react";
+
 import "./cart.css";
 import { useNavigate } from "react-router-dom";
 import useStore from "../../store/store";
-console.log("Cart import av store:", useStore);
+import arrowUp from "../../assets/arrowUp.svg";
+import arrowDown from "../../assets/arrowDown.svg";
 
 const Cart = () => {
-  console.log("Store ref i Cart:", useStore);
-
   const cart = useStore((state) => state.cart);
   const increaseQuantity = useStore((state) => state.increaseQuantity);
   const decreaseQuantity = useStore((state) => state.decreaseQuantity);
@@ -34,17 +33,34 @@ const Cart = () => {
         <p>Din varukorg är tom.</p>
       ) : (
         <>
-          <ul>
+        <div className="cartListWrapper">
+          <ul className="cartList">
             {cart.map((cartItem, index) => (
-              <li key={index}>
-                {cartItem.title} - {cartItem.quantity} st ({cartItem.price} kr/st)
-                <button onClick={() => decreaseQuantity(cartItem.title)}>-</button>
-                <button onClick={() => increaseQuantity(cartItem.title)}>+</button>
+              <li key={index} className="cartItem">
+                <div className="itemNameArea">
+                  <span className="itemTitle">{cartItem.title}</span>
+                  <span className="dots"></span>
+                </div>
+
+                <div className="quantityControls">
+                  <button onClick={() => increaseQuantity(cartItem.title)}>
+                    <img src={arrowUp} alt="Increase" className="arrowIcon" />
+                  </button>
+                  <span className="quantity">{cartItem.quantity}</span>
+                  <button onClick={() => decreaseQuantity(cartItem.title)}>
+                    <img src={arrowDown} alt="Decrease" className="arrowIcon" />
+                  </button>
+                </div>
               </li>
             ))}
           </ul>
-          <p>Total: {total} kr</p>
-          <button onClick={handleOrder}>Take my money!</button>
+        </div>
+
+          <p className="totalPrice">Total: {total} kr</p>
+
+          <button className="orderButton" onClick={handleOrder}>
+            Take my money!
+          </button>
         </>
       )}
     </div>

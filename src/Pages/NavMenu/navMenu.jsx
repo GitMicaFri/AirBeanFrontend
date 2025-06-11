@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-//import { useNavigate } from "react-router-dom";
 import "./navMenu.css"
 import closeIcon from "../../assets/close.svg"
 
@@ -17,7 +16,7 @@ function NavMenu() {
         <li><Link to="/coffee-menu">Meny</Link></li>
         <li><Link to="/about">Vårt kaffe</Link></li>
         <li><Link to="/profile">Min profil</Link></li>
-        <li><Link to="/order-history">Orderstatus</Link></li>
+        <li><Link to="/status">Orderstatus</Link></li>
       </ul>
     </div>
   );

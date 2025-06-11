@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import useStore from "../../store/store";
 import addIcon from "../../assets/add-icon.png";
 import CartButton from "../../Components/CartButton/CartButton";
-
+import MenuButton from "../../Components/MenuButton/menuButton"
 import headerImage from "../../assets/header.svg"; 
 import "./coffeeMenu.css";
 
@@ -35,9 +35,12 @@ const CoffeeMenuPage = () => {
 
   return (
     <div className="menu">
+      
       <CartButton />
+      <MenuButton />
        <header className="menuHeader">
-        <img src={headerImage} alt="Header" className="headerImage" />  {/* Header med samma bild */}
+        <img src={headerImage} alt="Header" className="headerImage" />  
+       
       </header>
       <h2 className="menuHeader">Meny</h2>
       <ul>
