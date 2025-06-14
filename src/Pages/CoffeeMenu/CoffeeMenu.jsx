@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import useStore from "../../store/store";
 import addIcon from "../../assets/add-icon.png";
 import CartButton from "../../Components/CartButton/CartButton";
-import MenuButton from "../../Components/MenuButton/menuButton"
+import MenuButton from "../../Components/MenuButton/MenuButton"
 import headerImage from "../../assets/header.svg"; 
 import "./coffeeMenu.css";
 
@@ -12,9 +12,8 @@ const CoffeeMenuPage = () => {
   console.log("Store ref i CoffeeMenu:", useStore);
 
   const { addToCart } = useStore();
-  //lista med alla kaffe
   const [coffee, setCoffee] = useState([]);
-  //useEffect används här så att hemsidan renderas först medan data hämtas från API
+ 
   useEffect(() => {
     const fetchData = async () => {
       try {

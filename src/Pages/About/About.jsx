@@ -1,6 +1,6 @@
 import "./about.css";
 import aboutImage from"../../assets/about.png"
-import MenuButton from "../../Components/MenuButton/menuButton"
+import MenuButton from "../../Components/MenuButton/MenuButton"
 
 function About() {
   const style = {
