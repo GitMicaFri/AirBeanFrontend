@@ -3,16 +3,19 @@
 import { useEffect, useState } from "react";
 import useStore from "../../store/store";
 import addIcon from "../../assets/add-icon.png";
-import CartButton from "../../Components/CartButton/CartButton";
-import MenuButton from "../../Components/MenuButton/MenuButton"
 import headerImage from "../../assets/header.svg"; 
 import "./coffeeMenu.css";
+import Header from "../../Components/Header/Header"
+import Footer from "../../Components/Footer/Footer"
+import CartButton from "../../Components/CartButton/CartButton"
+import Cart from "../../Components/Cart/Cart"
 
 const CoffeeMenuPage = () => {
-  console.log("Store ref i CoffeeMenu:", useStore);
-
   const { addToCart } = useStore();
   const [coffee, setCoffee] = useState([]);
+  const [cartIsOpen, setCartIsOpen] = useState(false)
+
+  const toggleCart = () => setCartIsOpen(!cartIsOpen)
  
   useEffect(() => {
     const fetchData = async () => {
@@ -33,15 +36,15 @@ const CoffeeMenuPage = () => {
   }, []);
 
   return (
-    <div className="menu">
-      
-      <CartButton />
-      <MenuButton />
-       <header className="menuHeader">
-        <img src={headerImage} alt="Header" className="headerImage" />  
-       
-      </header>
-      <h2 className="menuHeader">Meny</h2>
+    <>
+    <Header />
+
+    <CartButton toggleCart={toggleCart} />
+
+    { cartIsOpen && <Cart />}
+  
+    <div className="menu"> 
+      <h2 className="menuHeader">Din Mamma</h2>
       <ul>
         {coffee.menu
           ? coffee.menu.map((coffeeItem, index) => (
@@ -64,15 +67,11 @@ const CoffeeMenuPage = () => {
           : //visas medan api hämtas
             "Loading..."}
       </ul>
-       <footer className="menuFooter">
-       <img
-          src={headerImage}
-          alt="Footer"
-          className="footerImage"
-        />
-      </footer>
+       <Footer />
     </div>
+    </>
   );
 };
+
 
 export default CoffeeMenuPage;

@@ -2,15 +2,14 @@ import { Link } from "react-router-dom";
 import "./navMenu.css"
 import closeIcon from "../../assets/close.svg"
 
-
-function NavMenu() {
+function NavMenu(props) {
   console.log("Rendering NavMenu");  // Debug log
   return (
     <div className="navMenuContainer">
 
-<Link to="/" className="closeButton">
+      <button className="closeButton" onClick={props.onClose}>
         <img src={closeIcon} alt="Close menu" className="closeIcon" />
-      </Link>
+      </button>
 
       <ul className="navMenuList">
         <li><Link to="/coffee-menu">Meny</Link></li>
