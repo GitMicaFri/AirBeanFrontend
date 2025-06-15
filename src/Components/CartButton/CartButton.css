@@ -1,8 +1,12 @@
 .cartButton {
     position: absolute;
-    top: 20px;
-    right: 20px;
-    z-index: 1000;
+    height: 60px;
+    width: 60px;
+    top: 16px;
+    left: 299px;
+    background-color: black;
+    border-radius: 50%;
+    z-index: 98;
 }
 
 .cartIcon {

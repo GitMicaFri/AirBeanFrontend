@@ -10,7 +10,7 @@ function LandingPage() {
        //  showNavIcon={false}>  
                 <div className="landingPageContainer">
                   <img src={landingImage} alt="Landing Page" className="landingImage"/>
-                  <Link to="/navMenu" className="landingLink"> 
+                  <Link to="/about" className="landingLink"> 
                   <span className="hoverText">Klicka här för att läsa mer</span>
             </Link>
             </div> 

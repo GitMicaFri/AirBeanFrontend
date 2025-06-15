@@ -1,47 +1,43 @@
-body {
-  margin: 0 auto;
-  width: 370px;
-  height: 100vh;
-  display: flex;
-}
-
 .headerContainer {
-  padding-top: 10px;
-  display: flex;
-  justify-content: space-between;
+    background-image: url('../../assets/header.svg');
+    background-size: cover;
+    height: 113px;
+    padding-top: 10px;
+    position: relative;
+    z-index: 1;
+}
+.navButton {
+    width: 48px;
+    height: 48px;
+    top: 16px;
+    left: 16px;
+    position: absolute;
+    border-radius: 50%;
+    text-align: center;
+    padding: 0;
 }
 .navIcon {
-  margin-left: 30px;
-  margin-top: 7px;
-}
-
-.cartIcon {
-  margin-right: 13px;
-  margin-top: 7px;
-  background-color: black;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  text-decoration: none;
+    width: 40px;
+    height: 40px;
 }
 
 .cartLogo {
-  margin-left: 22px;
-  margin-top: 15px;
+    margin-left: 22px;
+    margin-top: 15px;
 }
 
 .quantityHolder {
-  margin-top: -2.8rem;
-  margin-left: 2.5rem;
-  font-size: 0.8rem;
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  width: 22px;
-  height: 22px;
-  background: rgba(229, 103, 78, 1);
-  color: rgb(255, 255, 255);
-  border-radius: 50%;
-  font-weight: bold;
+    margin-top: -2.8rem;
+    margin-left: 2.5rem;
+    font-size: 0.8rem;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 22px;
+    height: 22px;
+    background: rgba(229, 103, 78, 1);
+    color: rgb(255, 255, 255);
+    border-radius: 50%;
+    font-weight: bold;
 }

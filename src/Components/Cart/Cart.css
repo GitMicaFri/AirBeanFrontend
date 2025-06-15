@@ -2,23 +2,23 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 2rem;
+    background-color: white;
+    width: 341px;
+    position: absolute;
+    z-index: 1000;
+    top: 72px;
+    left: 17px;
 }
 
-/*
-.cartContainer {
-    position: fixed;
+.overlay {
+    background-color: rgba(0, 0, 0, 0.8);
+    height: 100%;
+    width: 370px;
+    position: absolute;
     top: 0;
     left: 0;
-    width: 100vw;
-    height: 100vh;
-    z-index: 1000;
-    background-color: rgba(0, 0, 0, 0.4); 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    z-index: 97;
 }
-*/
 
 h2 {
     font-family: PT Serif;
