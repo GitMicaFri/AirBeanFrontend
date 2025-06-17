@@ -1,6 +1,65 @@
-# För att se sidan och testa funktionerna:
+## AirBean - Teknisk dokumentation
 
-https://gitmicafri.github.io/AirBeanFrontend/#/
+# Teknikstack
+
+React (v18+)
+
+Vite (snabbare build & dev-server)
+
+Zustand (global state-management för varukorg och orderstatus)
+
+React Router DOM (routing — HashRouter används för deployment på GitHub Pages)
+
+Git & GitHub (versionshantering, branch-workflow och merge)
+
+GitHub Pages (deployment av färdigbyggd app via gh-pages branch)
+
+JavaScript (ES6+)
+
+# Funktionalitet
+
+Single Page Application (SPA) enligt kravspecifikation.
+
+Dynamisk meny hämtas via API med fetch().
+
+Användare kan lägga till produkter i varukorg.
+
+Öka, minska och ta bort produkter från varukorgen.
+
+Orderstatus-sida som visar bekräftelse.
+
+About-sida med företagspresentation och bild.
+
+Overlay för varukorgen implementerad med Zustand och komponent-styrning.
+
+# Deployment
+
+Appen är deployad via vite build och gh-pages till GitHub Pages.
+
+# Live-version:
+
+https://gitmicafri.github.io/AirBeanFrontend/
+
+Routing fungerar med HashRouter för att fungera korrekt på GitHub Pages (pga statisk hosting).
+
+# Utvecklingsprocess
+
+Projektet är utvecklat i egen branch-struktur:
+
+Feature-branch (Fix-css)
+
+Merge:ad via GitHub Pull Requests till main
+
+Deployment sker manuellt efter varje stabil version via:
+bash
+npm run deploy
+
+# API
+
+API-dokumentation använd:
+https://airbean-9pcyw.ondigitalocean.app/api/beans/
+
+Orderdata skickas till API vid beställning.
 
 # AirBean - Coffee Ordering App
 
@@ -12,11 +71,11 @@ Du kan se designen för AirBean här: [Figma Skiss](https://www.figma.com/file/U
 
 ## API-dokumentation
 
-Den officiella API-dokumentationen hittar du här:
+Den officiella API-dokumentationen hittar man här:
 
 -   [API-2 Docs](https://airbean-9pcyw.ondigitalocean.app/api/docs/)
 
-**Tidigare länkar som inte fungerar**:
+**Tidigare länkar till uppgiften, som inte fungerar**:
 
 -   [Gamla API-dokumentationen](https://airbean-api-xjlcn.ondigitalocean.app/api/docs/)
 -   [Gamla API-länken](https://airbean-api-xjlcn.ondigitalocean.app/)
