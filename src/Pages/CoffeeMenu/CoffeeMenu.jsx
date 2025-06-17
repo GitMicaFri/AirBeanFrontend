@@ -44,7 +44,7 @@ const CoffeeMenuPage = () => {
     { cartIsOpen && <Cart />}
   
     <div className="menu"> 
-      <h2 className="menuHeader">Din Mamma</h2>
+      <h2 className="menuHeader">Meny</h2>
       <ul>
         {coffee.menu
           ? coffee.menu.map((coffeeItem, index) => (
